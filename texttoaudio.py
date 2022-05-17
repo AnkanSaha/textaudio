@@ -11,12 +11,22 @@ import time as delay
 from languageconverter import convert
 # 6. this for validdating languages
 from invalidtextfinder import errorindexing
+# 7. this for text field blankness checker 
+from invalidtextfinder import textblankchecker
+# 8. this is for audio file blankness chacker 
+from invalidtextfinder import audiofilenameblankchecker
+# 9. this is for language code blankness checker 
+from invalidtextfinder import languagecodeblankchecker
+
+
 
 # take text input 
 text = inputer.prompt('Enter Your Text that you want to convert into sound')
+textblankchecker(text)
 delay.sleep(2)
 # take language input s
 templanguage = inputer.prompt('Enter Language Name in small case :: example ;- `english, hindi`')
+languagecodeblankchecker(templanguage)
 delay.sleep(2)
 # send language for validate in another file 
 language = convert(templanguage)
@@ -26,6 +36,7 @@ print(language)
 errorindexing(language)
 # take audio file name input ss
 audio = inputer.prompt('Enter audio file name to save `Without .mp3`')+'.mp3'
+audiofilenameblankchecker(audio)
 delay.sleep(2)
 # combinding all variables and making text to sound waves 
 sp = vansom(text=text, lang=language, slow=False)
