@@ -3,7 +3,7 @@ I make a Python based text to audio file converter project. this project  is a o
 
 To run this project , first run :-
 
-    git clone https://github.com/AnkanSaha/texttoaudio.git
+    git clone https://github.com/AnkanSaha/textaudio.git
 
 after downloading , run command :-
 
