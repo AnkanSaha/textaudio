@@ -3,7 +3,7 @@ I make a Python based text to audio file converter project. this project  is a o
 
 To run this project , first run :-
 
-     git clone https://github.com/AnkanSaha/texttoaudio.git
+    git clone https://github.com/AnkanSaha/texttoaudio.git
 
 after downloading , run command :-
 
@@ -28,8 +28,8 @@ then a GUI has open.
    
    then open the file and add thease line :-
    
-     from main.texttoaudio import main
+    from main.texttoaudio import main
       
    Then add thease line of code in second line :-
    
-        main()
+    main()
