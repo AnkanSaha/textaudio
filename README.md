@@ -7,7 +7,7 @@ To run this project , first run :-
 
 after downloading , run command :-
 
-    cd texttoaudio
+    cd textaudio
 
 after run those command, run command :-
 
